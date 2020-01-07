@@ -1,6 +1,6 @@
 using System;
 
-namespace PrimeiroDotNET
+namespace PrimeiroDotNET.Exemplos
 {
     
     public class Pilha
@@ -15,7 +15,7 @@ namespace PrimeiroDotNET
         {
             if (primeiro == null)
             {
-                throw new InvalidOperationException();
+                throw new InvalidOperationException("Não há mais nada para Desempilhar");
             }
 
             object resultado = primeiro.item;
